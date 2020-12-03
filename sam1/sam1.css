@@ -1,0 +1,208 @@
+﻿@charset "UTF-8";
+
+
+
+a { text-decoration: none; }      /*リンクの下線を消す*/
+a:link { color: #5E5E5E; }
+a:visited { color: #000; }
+a:hover { color: #ff8080; }
+li{ list-style:none; }            /*・を消す*/
+body{margin:0 auto; font-family: 'YuGothic','Century Gothic','游ゴシック体';}
+h2{font-size:30px;}
+html{scroll-behavior: smooth;}    /*スムーススクロール*/
+
+
+
+/*スマホ用のコンテンツ*/
+.gnav_smart, .menubtn, .site-header-smt, .gif2, .gnav_smart, .hbg_menue
+   {display:none;}
+
+
+
+
+.gif{
+	position: relative;
+}
+
+
+
+.gif div.g-text{
+	position: absolute;
+	width: 100%;
+    text-align:center;
+	font-size:50px;
+	/*font-family:monospace;*/
+	color:#fff;
+    z-index:50;
+    top: calc(50% - 40px); /*フォントサイズに合わせて-x px変更*/
+
+}
+
+.site-header{
+    background:rgba(255,255,255,0.8);
+    display: flex;
+    /*margin:0 auto;*/
+    padding:15px 0;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    height:40px;
+    float:left;
+    z-index:99;
+}
+
+
+
+.hero{
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.site-header.fixed{
+    position: fixed;
+    top: 0;
+
+}
+
+.site-logo{
+	/*アイテムを上下から中央に持ってくる*/
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	float: left;
+	font-size:30px;
+    padding:0 0 0 35px;
+    font-weight:700px;
+    color:#000;
+}
+
+
+.gnav{
+/*アイテムを上下から中央に持ってくる*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 30px 0 0;
+}
+
+
+.gnav__menu__item{
+	float:left;
+	padding:0px 20px 0px 30px;
+    font-size:20px;
+}
+
+
+.main{width:100%;}
+
+
+
+.headbr{
+height:70px;
+}
+
+
+.tone{
+    background-repeat:  no-repeat;
+	background-position:right;
+
+    display:flex;
+	width:100%;
+	height:400px;
+	padding:0px 50px 0px 50px;
+	box-sizing: border-box;   /*親要素(この場合はmain)からはみ出さなくなる*/
+}
+
+.tone2{
+	background-repeat:  no-repeat;
+	background-position:left;
+
+    display:flex;
+    flex-direction:row-reverse; /*子要素の並び順を右から配置にする*/
+	width:100%;
+	height:400px;
+	text-align:right;
+	padding:0px 50px 0px 50px;
+	box-sizing: border-box;
+}
+
+.back1{background-image:url(img/tone01.png);}
+.back2{background-image:url(img/tone02.png);}
+.back3{background-image:url(img/tone01.png);}
+
+
+.text{
+	height:400px;
+
+}
+
+.text > .mbtn{
+	text-align:center;
+}
+
+.text > p{
+	text-shadow: 0px 0px 5px #fff;
+}
+
+a.mbtn {
+  font-size: 1.5rem;
+  color: #fdeaea;
+  border-radius: 100vh;
+    padding:5px 35px;
+  background:linear-gradient(150deg,#01517F 20%,#d37272);
+  opacity:0.8;
+
+}
+
+a.mbtn:hover {
+	background:#ff8080;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+
+
+.profile{
+	background-image:url(img/plf2.png);
+	background-repeat:  no-repeat;
+	background-position:center;
+
+    display:flex;
+    flex-direction:row-reverse; /*子要素の並び順を右から配置にする*/
+	width:100%;
+	height:400px;
+	text-align:right;
+	padding:0px 50px 0px 50px;
+	box-sizing: border-box;
+}
+
+
+
+/* スクロールの幅の設定 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* スクロールの背景の設定 */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* スクロールのつまみ部分の設定 */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(150deg,#01517F 20%,#d37272);
+}
+
+
+/*
+#t1,#t2,#t3,#t4{
+	margin-top: -70px;
+    padding-top: 70px;
+}*/
+
+
+.footer{
+	height:80px;
+	background:#07396b;
+}
