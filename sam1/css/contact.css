@@ -1,0 +1,403 @@
+@charset "UTF-8";
+
+h2{display:none;}
+
+
+
+
+body{
+	font-size:20px;
+    margin:0 ;
+
+      }
+
+
+img{
+	width:100%;
+	 box-sizing: border-box;   /*親要素からはみ出さなくなる*/
+}
+
+
+
+.main{
+	position:absolute;
+	width:70%;
+    background:rgba(255,255,255,0.9);
+    border-radius:10px;
+    padding:35px 50px 50px 50px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.main2{
+position:relative;
+	width:70%;
+	margin:20px 0;
+    background:rgba(255,255,255,0.9);
+    border-radius:10px;
+    padding:35px 50px 50px 50px;
+
+    left:50%;
+    transform: translate(-50%,0%);
+    display:flex;
+
+ justify-content: center;
+ align-items: center;
+
+    /*top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);*/
+}
+
+
+h1{
+	position:absolute;
+	left:0;
+	margin-left:7%;
+}
+
+p{
+	color:#333;
+	font-weight:600;
+	margin:15px 0 3px 0;
+}
+
+span{
+	color:#fc301f;
+	font-size:25px;
+	font-weight:bold;
+}
+
+
+
+
+.form_box{
+
+	width:550px;
+    display: block;
+    margin:0;
+}
+
+
+.input{
+	width:100%;
+	height:30px;
+    outline:none;
+	font-size:18px;
+	border:solid 0.15em #777777;
+	border-radius:5px;
+}
+
+
+textarea{
+	resize:none;  /* テキストボックスの変動をなくす (右下の)*/
+	width:100%;
+	height:200px;
+	font-size:18px;
+	outline:none;
+	border:solid 0.15em #777;
+	border-radius:5px;
+	padding:6px 2px;
+}
+
+
+
+
+
+#span1,#span2,#span3{
+    font-size:16px;
+	font-weight:600;
+    color:#fc301f;
+    margin:0 0 0 15px;
+   /* opacity:0;*/
+    display:none;
+}
+
+
+
+.form_box_conf{
+	display:none;
+}
+
+
+#Cfm1,#Cfm2,#Cfm3,#Cfm4,#Cfm5{
+	padding:0 0 10px 0;
+
+}
+
+
+
+
+
+
+
+
+.submit{
+	outline:none;
+	font-size:20px;
+
+
+	position:absolute;
+    bottom:0;
+    right:0;
+    margin-bottom:30px;
+    margin-left:35%;
+
+    color: #ffffff;
+    border:none;
+    border-radius: 8px;
+    padding:5px 20px;
+    background:#01517F;
+    transform: translate(-50%,-50%);
+}
+.submit:hover,.rewrite:hover,.send:hover{
+	background:#ff8080;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.sendrite{
+	float:left;
+    width:600px;
+    height:100px;
+
+}
+
+
+.rewrite{
+
+	outline:none;
+	font-size:20px;
+	font-weight:nomal;
+
+position:absolute;
+    bottom:0;
+    left:0;
+    margin-bottom:60px;
+    margin-left:35%;
+
+
+    width:130px;
+
+    text-align:center;
+    color: #ffffff;
+    border:none;
+    border-radius: 8px;
+    padding:5px ;
+    background:rgb(1, 113, 180);
+}
+
+
+
+.send{
+	outline:none;
+	font-size:20px;
+	font-weight:nomal;
+
+	width:100px;
+
+ text-align:center;
+    position:absolute;
+    bottom:0;
+    right:0;
+    margin-bottom:60px;
+    margin-right:35%;
+
+    color: #ffffff;
+    border:none;
+    border-radius: 8px;
+    padding:5px ;
+    background:#01517F;
+}
+
+
+
+.CfmItem{
+	width:700px;
+    outline:none;
+	font-size:18px;
+
+	border-radius:5px;
+	margin:10px;
+    white-space: pre-wrap;    /*改行を反映させる*/
+
+}
+
+
+.send_text{
+	color:#ff8080;
+    margin-top:40px;
+	font-size:20px;
+	font-weight:600;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+@media  screen and  (max-width: 1300px) {
+
+
+/*PC版のヘッダーgif noneで消さないと出てくる*/
+h1{display:none;}
+
+
+
+h2{
+	display:inline;
+	margin:0;
+}
+
+
+.submit{
+	position:relative;
+	outline:none;
+	font-size:20px;
+    right:0;
+    margin:50px 0 0 90%;
+
+    color: #ffffff;
+    border:none;
+    border-radius: 8px;
+    padding:5px 20px;
+    background:#01517F;
+    transform: translate(-50%,-50%);
+}
+
+.submit:hover{
+	background:#ff8080;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.main{
+    position:relative;
+	width:70%;
+	margin:20px 0;
+    background:rgba(255,255,255,0.9);
+    border-radius:10px;
+    padding:35px 50px 30px 50px;
+
+    left:50%;
+    transform: translate(-50%,0%);
+    display:flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.main2{
+    position:relative;
+	width:70%;
+	margin:20px 0;
+    background:rgba(255,255,255,0.9);
+    border-radius:10px;
+    padding:35px 50px 50px 50px;
+
+    left:50%;
+    transform: translate(-50%,0%);
+    display:flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.form{
+	width:100%;
+	max-width: 550px;
+}
+
+.form_box{
+
+	width:100%;
+    display: block;
+    margin:0;
+}
+
+
+
+
+
+
+.rewrite{
+
+	outline:none;
+	font-size:20px;
+	font-weight:nomal;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-bottom:60px;
+    margin-left:20%;
+    width:130px;
+    text-align:center;
+    color: #ffffff;
+    border:none;
+    border-radius: 8px;
+    padding:5px ;
+    background:rgb(1, 113, 180);
+}
+
+
+.send{
+	outline:none;
+	font-size:20px;
+	font-weight:nomal;
+	width:100px;
+    text-align:center;
+    position:absolute;
+    bottom:0;
+    right:0;
+    margin-bottom:60px;
+    margin-right:20%;
+    color: #ffffff;
+    border:none;
+    border-radius: 8px;
+    padding:5px ;
+    background:#01517F;
+}
+
+
+.form_box_conf{
+  box-sizing:border-box;
+
+}
+
+
+.CfmItem{
+	width:100%;
+    outline:none;
+	font-size:18px;
+    box-sizing:border-box;
+	border-radius:5px;
+	margin:10px;
+    white-space: pre-wrap;    /*改行を反映させる*/
+    word-wrap: break-word;
+
+}
+
+
+
+
+
+
+
+
+
+
+}
+

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+
+
+a { text-decoration: none; }      /*リンクの下線を消す*/
+a:link { color: #000; }
+a:visited { color: #5E5E5E; }
+a:hover { color: #ff8080; }
+li{ list-style:none; }            /*・を消す*/
+body{margin:0 auto; font-family: 'YuGothic','Century Gothic','游ゴシック体';}
+
+
+
+
+
+
+/* スクロールの幅の設定 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* スクロールの背景の設定 */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* スクロールのつまみ部分の設定 */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(150deg,#01517F 20%,#d37272);
+}
+

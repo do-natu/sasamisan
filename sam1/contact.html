@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel= "stylesheet"href="css/main.css">
+<link rel= "stylesheet"href="css/contact.css">
+<title>contact</title>
+
+<script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="contact.js"></script>
+
+</head>
+
+
+<body background="img/backC.png">
+
+
+
+<form id="form" class="main"  method="post" onsubmit="return false;">
+
+
+<h1>Contact</h1>
+
+<div class="form" >
+
+<h2>Contact</h2>
+
+
+<!-- 入力フォーム -->
+
+<div id="ContactInput" class="form_box">
+<div  id="Cnt1">
+  <p>氏名<span>  *</span><span id="span1">必須項目です</span></p>
+	<input class="input" type="text" id="name"  placeholder="苗字 名前">
+</div>
+
+<div  id="Cnt2">
+  <p>会社名</p>
+	<input class="input" type="text" id="Cname" placeholder="株式会社○○">
+</div>
+
+<div  id="Cnt3">
+  <p>メールアドレス<span>  *</span><span id="span2">必須項目です</span></p>
+	<input class="input" type="text" id="mail" placeholder="abcd@xxx.com">
+</div>
+
+<div  id="Cnt4">
+  <p>件名</p>
+	<input class="input" type="text" id="kenmei" >
+</div>
+
+<div  id="Cnt5">
+  <p>お問い合わせ内容<span>  *</span><span id="span3" >必須項目です</span></p>
+	<textarea id="maintext" name="tarea"></textarea>
+</div>
+
+
+
+
+
+  <input class="submit" type="button" value="確認" id="check">
+
+
+
+
+
+</div>
+
+
+
+
+<!-- 確認画面 -->
+
+<div id="ContactConfirm" class="form_box_conf">
+  <p>氏名<span>  *</span></p>
+    <div id="Cfm1" class="CfmItem"><div>&nbsp;　</div></div>
+
+  <p>会社名</p>
+	<div id="Cfm2" class="CfmItem"><div>&nbsp;　</div></div>
+
+  <p>メールアドレス<span>  *</span><span id="span2">必須項目です</span></p>
+	<div id="Cfm3" class="CfmItem"><div>&nbsp;　</div></div>
+
+  <p>件名</p>
+	<div id="Cfm4" class="CfmItem"><div>&nbsp;　</div></div>
+
+  <p>お問い合わせ内容<span>  *</span><span id="span3" >必須項目です</span></p>
+	<div id="Cfm5" class="CfmItem"><div>&nbsp;　</div></div>
+
+  <div class="send_text">上記の内容で送信します。</div>
+
+ <div id="BtConfirm" class="sendrite">
+     <a ><div class="rewrite"id="BtCancel">書き直す</div></a>
+     <input class="send" type="submit" value="送信" />
+ </div>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+</form>
+</body>
+</html>
