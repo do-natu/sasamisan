@@ -1,0 +1,416 @@
+@charset "UTF-8";
+
+
+a { text-decoration: none; }/*リンクの下線を消す*/
+a:link { color: #5E5E5E; }
+a:visited { color: #000; }
+a:hover { color: #E19BA7; }
+li{ list-style:none; }/*・を消す*/
+
+
+
+body{
+	background:#ddd;
+	font-family: 'YuGothic','Century Gothic','游ゴシック体';
+	width:100%;
+	margin:0;
+}
+
+
+
+/*　トップの画像など*/
+
+.top{
+	width:100%;
+	height:100vh;
+	background:#aaa;
+	margin:0;
+}
+
+.content1{
+	box-sizing:border-box;
+	position:relative;
+	width:100%;
+	height:800px;
+
+}
+
+.img1{
+	position:absolute;
+	margin:50px;
+}
+.img2{
+	position:absolute;
+	margin:0 50px 70px 0;
+	right:0;
+	bottom:0;
+}
+
+.title{
+	position:absolute;
+	bottom:0;
+	margin:0 0 100px 50px;
+	font-size:100px;
+	font-weight:bold;
+	text-orientation: upright;
+	writing-mode: vertical-lr;
+	padding:0;
+	color:#fff;
+}
+
+span{
+	font-size:35px;
+	font-weight:nomal;
+}
+
+span1{
+	writing-mode:horizontal-tb;
+	margin:250px 0 0 -50px;
+	padding:0;
+}
+
+
+
+/*　コンテンツ１*/
+
+.content1{
+	position:relative;
+	width:100%;
+	height:1000px;
+	background:#fff;
+	padding:30px 100px 30px 300px;
+}
+
+
+.c1line{
+	display:flex;
+	width:100%;
+	height:auto;
+	margin-top:50px;
+}
+
+.c1box{
+	width:300px;
+	/*background:#78a5f2;*/
+	margin-right:40px;
+}
+
+
+.hako{
+	position:relative;
+	width:100%;
+	height:180px;
+	background:#f5f2f6;
+	overflow:hidden;
+}
+
+.lefthand{
+	position: absolute;
+	z-index:5;
+	top:0;
+	left:-130px;
+
+}
+
+.righthand{
+	position: absolute;
+	z-index:5;
+	top:0;
+	right:-130px;
+}
+
+.hako p{
+	position: absolute;
+	z-index:5;
+	top:30%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color:#fff;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+
+.hako img{
+	border-radius: 8px;
+}
+
+.hakoT{
+	width:100%;
+	/*background:#d1f5a8;*/
+}
+
+.c1btn{
+	width:300px;
+	font-size:30px;
+	margin:60px 33%;
+	text-align:center;
+	border:solid 1px ;
+	border-radius: 8px;
+	box-sizing:border-box;
+}
+
+
+/*　サイドコンテンツ　*/
+
+
+
+.side{
+	box-sizing:border-box;
+	z-index:20;
+	position:absolute;
+	width:100%;
+	height:100vh;
+}
+
+.imgside1{
+	position:fixed;
+	top:50px;
+	left:50px;
+}
+
+
+.humanbox{
+	position:fixed;
+	width:150px;
+	height:auto;
+	left:50px;
+	bottom:50px;
+}
+
+
+
+
+.humanText{
+	width:130px;
+	height:auto;
+	padding:10px;
+	margin-bottom:20px;
+	border:solid;
+	border-width: 2px 2px 5px;
+	border-radius:20px 20px 20px 0;
+	background:#fff;
+	font-size:14px;
+}
+
+
+
+
+
+/*　コンテンツ2　*/
+
+.content2{
+	position:relative;
+	width:100%;
+	height:700px;
+	background:#ff9999;
+
+}
+
+.c2box{
+	font-size:30px;
+	position:absolute;
+	top:50%;
+	margin-left:300px;
+ 	transform: translateY(-50%);
+}
+
+span2{
+	font-size:50px;
+	font-weight:bold;
+}
+
+.c2box2{
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-right:50px;
+ 	transform: translateY(-50%);
+
+}
+
+
+
+
+
+
+/*　コンテンツ3　*/
+
+.content3{
+	box-sizing:border-box;
+	position:relative;
+	width:100%;
+	height:auto;
+	background:#fff;
+	padding:30px 100px 100px 300px;
+}
+
+
+.c3line{
+	display:flex;
+	width:100%;
+	height:auto;
+	margin-top:50px;
+}
+
+.c3box{
+	width:470px;
+	/*background:#78a5f2;*/
+	margin-right:40px;
+}
+
+.under3{
+	font-size:25px;
+	font-weight:bold;
+	margin:5px 0;
+}
+
+.hako3{
+	width:100%;
+	height:280px;
+	overflow: hidden;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+.hako3 img{
+	box-sizing: border-box;
+	border-radius: 8px;
+	width: 100%;
+	height:280px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+.hako3 img:hover  {
+	width: 120%;
+	height: 120%;
+
+  }
+
+
+.hakoT3{
+	width:100%;
+	/*background:#d1f5a8;*/
+	font-size:25px;
+	font-weight:bold;
+}
+.hakoT3 p{
+		margin:10px 0;
+}
+
+
+
+
+
+/*　コンテンツ4　*/
+
+.content4{
+	box-sizing:border-box;
+	position:relative;
+	width:100%;
+	height:auto;
+	background:#e6baa2;
+	padding:100px 100px 100px 300px;
+}
+
+.c4box{
+	padding:50px 70px;
+	font-size:28px;
+	background:#fff;
+	opacity:0.8;
+	border-radius:8px;
+}
+
+.c4box p{
+	line-height: 60px;
+	transform-origin:top;
+}
+
+.c4box h2{
+	margin:0;
+}
+
+.c4fade{
+/*	transform-origin:top;*/
+	opacity:1;
+}
+
+
+
+
+
+
+/*　フッター　*/
+
+.footer{
+	position:relative;
+	width:100%;
+	height:400px;
+	top:50%;
+	background:#000;
+
+}
+
+.Fcontent{
+	color:#fff;
+	position:absolute;
+	top:50%;
+	left:50%;
+ 	text-align: center;
+ 	transform: translate(-50%,-50%);
+}
+
+.futterbtn{
+	color:#fff;
+	background:#772222;
+	padding:15px 50px;
+	font-size:25px;
+	font-weight:bold;
+	border-radius:8px;
+}
+
+
+
+
+
+/* カーソルとマウスストーカー */
+
+.stalker {
+    pointer-events: none;/*【重要】マウス直下に常に画像があるので、全てをクリックできなくなる。noneにして対応*/
+    position: fixed;
+    top: -16px;     /* 座標調節（カーソル先端に合わせる）*/
+    left: -12px;    
+	width: 16px;   
+	height: 16px;   
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    transform: translate(0,0);
+    transition: transform 0.2s;  
+    transition-timing-function: ease-out;
+    z-index: 99;
+}
+
+.chover{
+
+
+	color:#fff;
+	width: 30px;   
+	height: 30px;   
+    background: rgb(255, 138, 117);
+	border-radius: 50% 50% 50% 0;
+	box-shadow: 2px 3px 0px 0 rgb(255, 255, 255);
+	
+	pointer-events: none;/*【重要】マウス直下に常に画像があるので、全てをクリックできなくなる。noneにして対応*/
+    position: fixed;
+    top: -25px;     /* 座標調節（カーソル先端に合わせる）*/
+    left: -20px; 
+	transform: translate(0,0);
+    transition: transform 0.2s;  
+    transition-timing-function: ease-out;
+    z-index: 99;
+}
+
+.chover ::before{
+	content: "あ！";
+}

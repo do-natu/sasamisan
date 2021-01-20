@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+
+.chara_btn{
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.close{
+    position: absolute;
+    font-size: 40px;
+    top: 10px;
+    right: 20px;
+}
+
+.prev{
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+    width: 90px;
+    height: 90px;
+    background: #336688;
+    cursor:pointer;
+}
+
+.next{
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+    width: 90px;
+    height: 90px;
+    background: #336688;
+    cursor:pointer;
+}
+
+
+.profile{
+    box-sizing: border-box;
+    padding: 15px 50px;
+    width: 80%;
+    height: 100vh;
+ /*   background-color: rgba(232, 232, 232,0.8);*/
+    position: absolute;
+  
+    left:50%;
+    transform: translate(-50%);  
+}
+
+
+.illust{
+    width: auto;
+    height: 100%;
+ /*   background-color: beige;*/
+}
+
+.cr_name{
+    position: absolute;
+    right: 50px;
+    top: 80px;
+    font-size: 36px;
+}
+.cr_cv{
+    position: absolute;
+    right: 50px;
+    top:130px;
+    font-size: 20px;
+
+}
+
+.cr_face{
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    width: 450px;
+    height: 200px;
+    transform: translate(0,-50%);  
+
+}
+
+.cr_prof{
+    position: absolute;
+    right: 50px;
+    bottom:80px;
+    width: 450px;
+    font-size: 20px;
+ 
+}
+
+.backcl{
+    box-sizing: border-box;
+    width: 80%;
+    height: 100vh;
+    background-color: rgba(210, 210, 210, 0.8);
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);  
+    z-index: -1;
+}
+
+
+
+
+/* JSのためのやつ */
+#crIllst,#crIllst2,#crIllst3,#crIllst4,#crIllst5,#crIllst6,#crIllst7,#crIllst8,#crIllst9,#crIllst10{
+    margin: -40px 0 0 0;
+    opacity: 0;
+}
+
+.crText,.crText2,.crText3,.crText4,.crText5,.crText6,.crText7,.crText8,.crText9,.crText10{
+    margin: 40px 0 0 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.crTx,.crTx2,.crTx3,.crTx4,.crTx5,.crTx6,.crTx7,.crTx8,.crTx9,.crTx10{
+    position: absolute;
+    bottom:40px;    
+    opacity: 0;
+}
+
+.linebox0,.linebox,.linebox2,.linebox3,.linebox4,.linebox5,
+.linebox6,.linebox7,.linebox8,.linebox9,.linebox10{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top:55%;
+    z-index: -2;
+}
+
+.linebox0{background: #fff;}
+.linebox{background: rgb(244, 131, 131);}
+.linebox2{background: rgb(227, 128, 74);}
+.linebox3{background: rgb(29, 198, 201);}
+.linebox4{background: rgba(196, 47, 47, 0.94);}
+.linebox5{background: rgb(15, 55, 233);}
+.linebox6{background: rgb(255, 173, 173);}
+.linebox7{background: rgb(227, 206, 48);}
+.linebox8{background: rgb(105, 45, 98);}
+.linebox9{background: rgb(147, 198, 142);}
+.linebox10{background: rgb(53, 47, 57);}
+

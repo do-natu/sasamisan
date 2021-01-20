@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/* 共通設定 */
+
+a { text-decoration: none; }/*リンクの下線を消す*/
+a:link { color: #000; }
+a:visited { color: #000; }
+a:hover { color: #24a4c4; }
+li{ list-style:none; }/*・を消す*/
+
+/* リンク、ホバー */
+/*
+.header a:before{
+	content: "";
+	position: absolute;
+	left: -10%;    /*オーバーした分
+	bottom: -3px;
+	width: 120%;   /*線の長さ
+	height: 3px;
+	background: #000;
+	transform: scale(0, 1);
+	transition: 0.4s;
+}*/
+
+
+
+body{ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /*    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+	width:100%;
+    margin:0; 
+}
+
+/* タイトル */
+.title{
+    color: #000;
+    width: 100%;
+    height:auto;
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+ /*  background: rgba(255, 255, 255, 0.4);*/
+    padding:120px 0 30px; 
+}
+
+
+
+/* ヘッダー */
+
+.header{
+    font-size: 16px;
+    position:fixed;
+    display: flex;
+    z-index: 100;
+    width: 100%;
+    height: 65px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.menu{
+    position: absolute;
+    height: 100%;
+    right:0;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.menuli{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 65px;
+}
+
+.headli{
+    margin:0 40px;
+    padding: 20px 10px;
+    /*border:solid 1px #000;*/
+    box-sizing: border-box;
+}
+
+/* ニュースのリスト */
+
+.Nmenu {
+    position: absolute;
+    padding: 0 25px;
+    top:65px;
+    right: 665px;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.7);
+  
+    
+}
+
+.Nmenu ul{
+    margin: 0;
+    padding:5px 20px;
+}
+
+.newsli{
+    padding:10px 25px;
+   /* text-align: center;*/
+
+}
+
+
+
+
+/* 本文非表示 */
+#mainFade{
+    opacity: 0;
+    margin:30px 0 0 0;
+}
+
+
+
+
+
+
+
+/* フッター */
+
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background: rgb(243, 177,175);
+    color: #ffffff;
+}
+
+.Ftext{
+       position: absolute;
+    text-align: center;
+}
+
+.footer img{
+    width: 40px;
+    height: auto;
+
+}
+
+.Ftwt{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top:40px;
+    right:115px;
+}
+
+.Fytb{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top:40px;
+    right:40px;
+}
